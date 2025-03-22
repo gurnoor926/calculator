@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator app</title>
+</head>
+<body>
+    <details>
+        <summary>How to use</summary>
+        <pre>
+            1. Enter the first number
+            2. click enter 
+            3. Enter the second number
+            4. click on the operator
+            5. click c to clear screen
+        </pre>
+    </details>
+    <div id="cal">
+    <div id="inp">
+    <input type="number" name="n1" id="num1" readonly>
+    <br>
+    <input type="number" name="n2" id="num2" readonly>
+    <h2 id = "ans" class="opert"></h2>
+    </div>
+    <div id="bttns">
+        <button onclick="insertNumber(1)">1</button>
+        <button onclick="insertNumber(2)">2</button>
+        <button onclick="insertNumber(3)">3</button>
+        <button id="add" class="opert">+</button>
+        <br>
+        <button onclick="insertNumber(4)">4</button>
+        <button onclick="insertNumber(5)">5</button>
+        <button onclick="insertNumber(6)">6</button>
+        
+        <button id = "mul" class="opert">*</button>
+        <br>
+        <button onclick="insertNumber(7)">7</button>
+        <button onclick="insertNumber(8)">8</button>
+        <button onclick="insertNumber(9)">9</button>
+        <button id = "sub" class="opert">-</button>
+        <br>
+        <button onclick="insertNumber(0)">0</button>
+        <button onclick="clearInput()" id="cls">C</button>
+        <button id = "div" class="opert">/</button>
+        <button onclick="switch_num2()" id="enter">Enter</button>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
